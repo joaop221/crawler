@@ -1,14 +1,15 @@
 from requests import put, get
 
 
-class crawler:
+class Crawler:
 	def __init__(self,url, key):
 		self.url = url
 		self.key = key
-		self.put = get(self.url).json()
+		self.get = get(self.url).json()
 
 	def imprime():
-		print(self.put)
+		print(self.get)
 
 if __name__ == "__main__":
-	pass
+	crawler = Crawler()
+	crawler.imprime()
