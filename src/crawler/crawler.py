@@ -7,9 +7,12 @@ class Crawler:
 		self.key = key
 		self.get = get(self.url).json()
 
-	def imprime():
-		print(self.get)
+	def checar():
+		if self.key in self.get:
+			print("sucesso")
+		else:
+			print("Falha")
 
 if __name__ == "__main__":
-	crawler = Crawler()
-	crawler.imprime()
+	crawler = Crawler("http://google.com", "google")
+	crawler.checar()

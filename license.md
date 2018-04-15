@@ -1,1 +1,1 @@
-Lisence: Para uso de testes.
+Lisence: Dedicado a testes do uso de crawlers com python.
